@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ConceptBridge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <p class="eyebrow">SPEED SEPTEMBER AI CHALLENGE · LOCAL NLP</p>
+      <h1>ConceptBridge</h1>
+      <p class="lede">Test an explanation at the edge of what it means.</p>
+    </header>
+    <section class="panel input-panel">
+      <div class="panel-title"><div><p class="eyebrow">01 · YOUR MODEL</p><h2>Explain a concept</h2></div><span>browser-only</span></div>
+      <label>Concept<input id="concept" value="photosynthesis" aria-label="Concept"></label>
+      <label>Your explanation<textarea id="explanation" aria-label="Your explanation">Plants use sunlight to make food from water and carbon dioxide.</textarea></label>
+      <button id="bridge" type="button">Build a boundary test</button>
+      <p id="status" class="status" aria-live="polite">Ready for an explanation.</p>
+    </section>
+    <section class="grid" aria-live="polite">
+      <article class="panel"><p class="eyebrow">02 · MODEL TRACE</p><h2>Central claim</h2><p id="claim" class="result muted">Run a boundary test to extract the claim.</p><div class="trace"><span>local retrieval model</span><strong id="confidence">—</strong></div></article>
+      <article class="panel accent"><p class="eyebrow">03 · EDGE CASE</p><h2>Where it may fail</h2><p id="edge" class="result muted">A contrastive example will appear here.</p></article>
+      <article class="panel question"><p class="eyebrow">04 · DISCRIMINATING QUESTION</p><h2>What would you predict?</h2><p id="question" class="result muted">The question tests the boundary, not your intelligence.</p><textarea id="answer" aria-label="Your answer" placeholder="Write your prediction..."></textarea><button id="reflect" class="secondary" type="button">Compare my prediction</button><p id="feedback" class="status" aria-live="polite"></p></article>
+      <article class="panel"><p class="eyebrow">05 · BEFORE / AFTER</p><h2>Learning record</h2><div class="compare"><div><span>Before</span><p id="before" class="muted">Your original explanation appears here.</p></div><div><span>After</span><p id="after" class="muted">Revise your explanation after the boundary test.</p></div></div><textarea id="revision" aria-label="Revised explanation" placeholder="I would revise my explanation to..."></textarea><button id="save" type="button">Save reflection</button></article>
+    </section>
+    <footer><span>Local NLP retrieval · no upload</span><span>ConceptBridge / 2026</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
