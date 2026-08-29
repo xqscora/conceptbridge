@@ -6,6 +6,10 @@ ConceptBridge is a small educational AI/ML prototype for the SPEED September AI 
 
 Open `index.html` in a modern browser. No package installation or API key is required.
 
+Live demo: https://xqscora.github.io/conceptbridge/
+
+Repository: https://github.com/xqscora/conceptbridge
+
 ## Honest boundary
 
 The current hackathon MVP uses deterministic keyword retrieval as a lightweight local model. It does not claim to be a general-purpose language model, grader, diagnosis tool, or teacher replacement. The final submission must disclose this implementation, the exact AI coding tools used, and any later model/API additions.
